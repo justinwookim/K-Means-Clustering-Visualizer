@@ -1,0 +1,23 @@
+#container {
+    height: 500px; 
+    display: flex; 
+    align-items: flex-end;
+    background-color: black;
+    margin: 0; 
+    position: absolute; 
+    top: 50%; 
+    -ms-transform: translateY(-50%); 
+    transform: translateY(-50%); 
+}
+
+body {
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+}
+
+.bar {
+    width: 10px; 
+    background-color: white;
+    margin: 1px; 
+}
