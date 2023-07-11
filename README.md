@@ -1,1 +1,1 @@
-# K-Means-Clustering-Visualizer
+# Sorting Algorithm Visualizer
