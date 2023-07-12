@@ -11,18 +11,30 @@ function init() {
 }
 
 function playBubble() {
+    document.getElementById("initButton").disabled = true; 
+    document.getElementById("mergeButton").disabled = true; 
+    document.getElementById("quickButton").disabled = true; 
+    document.getElementById("bubbleButton").disabled = true; 
     const copy = [...array]; 
     const moves = bubbleSort(copy); 
     animate(moves); 
 }
 
 function playMerge() {
+    document.getElementById("initButton").disabled = true; 
+    document.getElementById("mergeButton").disabled = true; 
+    document.getElementById("quickButton").disabled = true; 
+    document.getElementById("bubbleButton").disabled = true; 
     const copy = [...array]; 
     const moves = mergeSort(copy); 
     animate(moves); 
 }
 
 function playQuick() {
+    document.getElementById("initButton").disabled = true; 
+    document.getElementById("mergeButton").disabled = true; 
+    document.getElementById("quickButton").disabled = true; 
+    document.getElementById("bubbleButton").disabled = true; 
     const copy = [...array]; 
     const moves = []; 
     quickSort(copy, 0, array.length - 1, moves); 
@@ -171,6 +183,10 @@ function showBars(move) {
 function checkSort(index) {
     if (index > array.length) {
         showBars(); 
+        document.getElementById("initButton").disabled = false; 
+        document.getElementById("mergeButton").disabled = false; 
+        document.getElementById("quickButton").disabled = false; 
+        document.getElementById("bubbleButton").disabled = false; 
         return; 
     }
     container.innerHTML =""; 
